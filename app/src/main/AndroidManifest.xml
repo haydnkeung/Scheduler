@@ -16,10 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".Calender"
-            android:label="@string/calender">
-        </activity>
+            android:label="@string/calender"></activity>
+        <activity
+            android:name=".Settings"
+            android:label="Settings"
+            ></activity>
     </application>
 
 </manifest>
