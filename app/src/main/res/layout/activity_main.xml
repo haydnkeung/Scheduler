@@ -14,9 +14,10 @@
         android:scaleType="centerCrop"/>
 
     <TextView
+        android:id="@+id/countDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hello Haydn!"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,12 +30,12 @@
         >
 
         <Button
-            android:id="@+id/start"
+            android:id="@+id/startButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Click Me"
-            android:onClick="showCalender"/>
+            />
 
     </LinearLayout>
 
