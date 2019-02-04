@@ -16,15 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".Calender"
-            android:label="@string/calender"></activity>
+            android:label="@string/calender" />
+
         <activity
             android:name=".Settings"
-            android:label="Settings"
-            ></activity>
+            android:label="Settings" />
+
+        <activity android:name=".Test" />
+
+        <activity
+            android:name=".Tasks"
+            android:label="Tasks">
+
+        </activity>
     </application>
 
 </manifest>

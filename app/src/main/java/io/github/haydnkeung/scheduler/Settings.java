@@ -1,7 +1,7 @@
 package io.github.haydnkeung.scheduler;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
@@ -14,6 +14,6 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         TextView verText = findViewById(R.id.verText);
-        verText.setText(versionNumber);
+        verText.setText("Version: " + versionNumber);
     }
 }
