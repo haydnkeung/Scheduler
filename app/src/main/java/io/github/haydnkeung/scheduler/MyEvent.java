@@ -1,6 +1,8 @@
+package io.github.haydnkeung.scheduler;
+
 import android.content.Context;
 
-public class Event {
+public class MyEvent {
 
 
     private String eventName;
@@ -11,12 +13,18 @@ public class Event {
     private boolean hasDate = false;
 
     //Constructor Specifying date
-    public Event(Context context, String eventName, int year, int month, int day) {
+    public MyEvent(Context context, String eventName, int year, int month, int day) {
         this.eventName = eventName;
         this.year = year;
-        this.month = year;
+        this.month = month;
         this.day = day;
         hasDate = true;
+    }
+
+    //Constructor without date
+    public MyEvent(Context context, String eventName) {
+        this.eventName = eventName;
+        this.descrip = descrip;
     }
 
     public boolean hasDate() {
@@ -28,14 +36,19 @@ public class Event {
         return hasDate;
     }
 
-    //Constructor without date
-    public Event(Context context, String eventName) {
-        this.eventName = eventName;
-        this.descrip = descrip;
-    }
-
     public String getEventName() {
         return this.eventName;
+    }
+
+    public String getDate() {
+        if (!hasDate) {
+            return "00-00-0000";
+        }
+
+        String month = String.format("%02d", this.month);
+        String day = String.format("%02d", this.day);
+        String year = String.format("%04d", this.year);
+        return month + "-" + day + "-" + 2019;
     }
 
     public String getDescrip() {
