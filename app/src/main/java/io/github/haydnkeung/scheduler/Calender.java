@@ -20,7 +20,7 @@ public class Calender extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calender);
-        rootView=findViewById(R.id.calenderLayout);
+        rootView = findViewById(R.id.calenderLayout);
 
         ArrayList<String> list = new ArrayList<>();
         for(int i = 0; i < 9;i++){

@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startTimer(){
         //Timer
-        timerView=findViewById(R.id.countDown);
+        timerView = findViewById(R.id.countDown);
         timer = new CountDownTimer(timeInMilisec,1000) {
             @Override
             public void onTick(long millisUntilFinished) {

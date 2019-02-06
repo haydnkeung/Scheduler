@@ -29,12 +29,17 @@
         android:orientation="vertical"
         >
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="180dp"/>
+
         <Button
             android:id="@+id/startButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Click Me"
+            android:text="Calender"
             />
 
         <Button
