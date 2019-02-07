@@ -47,8 +47,8 @@ public class MyEvent {
 
         String month = String.format("%02d", this.month);
         String day = String.format("%02d", this.day);
-        String year = String.format("%04d", this.year);
-        return month + "-" + day + "-" + 2019;
+        String year = String.format("%04d", (this.year+2019));
+        return month + "-" + day + "-" + year;
     }
 
     public String getDescrip() {

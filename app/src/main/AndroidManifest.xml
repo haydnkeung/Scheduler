@@ -24,7 +24,7 @@
             android:label="Settings" />
         <activity android:name=".Test" />
         <activity
-            android:name=".Tasks"
+            android:name=".TaskList"
             android:label="Tasks"></activity>
         <activity android:name=".TaskDetails"></activity>
     </application>
