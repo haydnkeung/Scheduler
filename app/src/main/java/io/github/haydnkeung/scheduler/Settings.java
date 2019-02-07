@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class Settings extends AppCompatActivity {
 
-    private final String versionNumber = "19.01.20a";//Format is YY/MM/DD[a-z]
+    private final String versionNumber = "19.02.06a";//Format is YY/MM/DD[a-z]
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
